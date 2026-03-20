@@ -2,214 +2,220 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Privalyx</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Privalyx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+      background: linear-gradient(180deg, #0b0f19, #05070d);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 80px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #a0a7b8;
+      font-size: 18px;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      background: #00d4ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .cta a:hover {
+      opacity: 0.9;
+    }
+
+    .cta .secondary {
+      background: transparent;
+      border: 1px solid #00d4ff;
+      color: #00d4ff;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: #a0a7b8;
+    }
+
+    .solution p {
+      color: #a0a7b8;
+      max-width: 700px;
+    }
+
+    .features {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .feature-box {
+      flex: 1;
+      min-width: 260px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .feature-box h4 {
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      color: #a0a7b8;
+    }
+
+    .cta-section {
+      text-align: center;
+      padding-bottom: 100px;
+    }
+
+    .cta-section h3 {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Privalyx</h1>
-    </header>
+  <header>
+    PRIVALYX
+  </header>
 
-    <section class="hero">
-        <h2>Manage Data Rights with Speed, Precision, and Control</h2>
-        <p>Privalyx is an AI-powered platform that automates DSAR and privacy workflows, helping organisations reduce
-            risk and improve response times.</p>
-        <div class="cta">
-            <a href="#">Book a Demo</a>
-            <a class="secondary" href="#">See How It Works</a>
-        </div>
-    </section>
+  <section class="hero">
+    <h2>Manage Data Rights with Speed, Precision, and Control</h2>
+    <p>
+      Privalyx is an AI-powered privacy operations platform that automates DSAR and compliance workflows, helping
+      organisations reduce risk, improve response times, and maintain full audit control.
+    </p>
 
-    <section class="problem">
-        <h3>Privacy Requests Are Slowing You Down</h3>
-        <ul>
-            <li>Manual DSAR handling is time-consuming</li>
-            <li>Fragmented systems and emails</li>
-            <li>Missed deadlines increase compliance risk</li>
-            <li>No clear audit trail</li>
-        </ul>
-    </section>
+    <div class="cta">
+      <a href="#">Book a Demo</a>
+      <a href="#" class="secondary">See How It Works</a>
+    </div>
+  </section>
 
-    <section class="solution">
-        <h3>An Intelligent Operating System for Data Rights</h3>
-        <p>Privalyx centralises requests, automates workflows, and provides full audit visibility across your privacy
-            operations.</p>
-    </section>
+  <section class="problem">
+    <h3>Privacy Requests Are Slowing You Down</h3>
+    <ul>
+      <li>Manual DSAR handling is time-consuming and inefficient</li>
+      <li>Requests scattered across emails and systems</li>
+      <li>Compliance risk from missed deadlines</li>
+      <li>Lack of clear audit trails and visibility</li>
+    </ul>
+  </section>
 
-    <section class="features">
-        <div>
-            <h4>Intelligent Intake</h4>
-            <p>Automatically capture and categorise requests</p>
-        </div>
-        <div>
-            <h4>Workflow Automation</h4>
-            <p>Assign tasks and track deadlines</p>
-        </div>
-        <div>
-            <h4>Audit Trail</h4>
-            <p>Every action recorded and defensible</p>
-        </div>
-    </section>
+  <section class="solution">
+    <h3>An Intelligent Operating System for Data Rights</h3>
+    <p>
+      Privalyx centralises requests, automates workflows, and provides full audit visibility across your privacy
+      operations. Replace fragmented processes with a structured, intelligent system built for compliance.
+    </p>
+  </section>
 
-    <section class="cta-section">
-        <h3>Take Control of Your Privacy Operations</h3>
-        <a href="#">Book a Demo</a>
-    </section>
+  <section class="features">
+    <div class="feature-box">
+      <h4>Intelligent Intake</h4>
+      <p>Automatically capture and categorise incoming data requests.</p>
+    </div>
 
-    <footer>
-        <p>© Privalyx</p>
-    </footer>
+    <div class="feature-box">
+      <h4>Workflow Automation</h4>
+      <p>Assign tasks, track deadlines, and manage approvals seamlessly.</p>
+    </div>
+
+    <div class="feature-box">
+      <h4>Data Coordination</h4>
+      <p>Connect systems and teams to retrieve data efficiently.</p>
+    </div>
+
+    <div class="feature-box">
+      <h4>Review & Redaction</h4>
+      <p>Reduce manual workload while maintaining compliance standards.</p>
+    </div>
+
+    <div class="feature-box">
+      <h4>Audit Trail</h4>
+      <p>Every action recorded and defensible for compliance reporting.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h3>Take Control of Your Privacy Operations</h3>
+    <a href="#">Book a Demo</a>
+  </section>
+
+  <footer>
+    © Privalyx — Privacy Operations Platform
+  </footer>
 
 </body>
 
 </html>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #0b0f19;
-color: #ffffff;
-line-height: 1.6;
-}
-
-header {
-padding: 20px;
-text-align: center;
-font-weight: bold;
-}
-
-.hero {
-text-align: center;
-padding: 80px 20px;
-}
-
-.hero h2 {
-font-size: 36px;
-max-width: 700px;
-margin: auto;
-}
-
-.hero p {
-max-width: 600px;
-margin: 20px auto;
-color: #aaa;
-}
-
-.cta a {
-display: inline-block;
-margin: 10px;
-padding: 12px 24px;
-background: #00d4ff;
-color: #000;
-text-decoration: none;
-border-radius: 6px;
-}
-
-.cta .secondary {
-background: transparent;
-border: 1px solid #00d4ff;
-color: #00d4ff;
-}
-
-section {
-padding: 60px 20px;
-max-width: 900px;
-margin: auto;
-}
-
-.features {
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
-}
-
-.features div {
-flex: 1;
-min-width: 250px;
-}
-
-.cta-section {
-text-align: center;
-}
-
-footer {
-text-align: center;
-padding: 20px;
-color: #666;
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0f19;
-  color: #ffffff;
-  line-height: 1.6;
-}
-
-header {
-  padding: 20px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h2 {
-  font-size: 36px;
-  max-width: 700px;
-  margin: auto;
-}
-
-.hero p {
-  max-width: 600px;
-  margin: 20px auto;
-  color: #aaa;
-}
-
-.cta a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 24px;
-  background: #00d4ff;
-  color: #000;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-.cta .secondary {
-  background: transparent;
-  border: 1px solid #00d4ff;
-  color: #00d4ff;
-}
-
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.features {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.features div {
-  flex: 1;
-  min-width: 250px;
-}
-
-.cta-section {
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #666;
-}
